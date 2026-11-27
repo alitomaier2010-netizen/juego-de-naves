@@ -16,6 +16,36 @@ desde arriba y el juego termina al perder todas las vidas.
 - **Encapsulamiento:** atributos `private` (`x`, `y`, `vidas`) accesibles solo por métodos `public` (`getVidas()`, `reducirVida()`, `mover()`).
 - **Métodos:** `pintar()`, `borrar()` y `mover()` hacen que el objeto «se dibuje y se mueva por sí mismo».
 
+## Datos institucionales
+
+- **Institución:** E.E.S.T. N.º 1 «Eduardo Ader» — Vicente López
+- **Curso:** 5.º 3.ª A-B
+- **Materia:** Laboratorio de Programación (LPR)
+- **Profesor:** Prof. York
+- **Actividad:** 8 — POO en C++: juego de naves en consola
+
+## Presentación de la Actividad
+
+Simulador de combate espacial con las clases Nave, Asteroide y Bala; movimiento con W/A/S/D, disparo con ESPACIO, vidas y puntaje en el HUD.
+
+## Integrantes y roles
+
+| Integrante | Rol / tarea asignada | Aporte individual |
+|---|---|---|
+| Alexis Maier | Diseño de clases, encapsulamiento, puntaje, capturas e informe | [juego-de-naves](https://github.com/alitomaier2010-netizen/juego-de-naves) |
+
+## Requisitos e instalación
+
+1. **Git** instalado para clonar el repositorio.
+2. **Editor de código** (VS Code con extensiones de C/C++, o Visual Studio Community).
+3. **Compilador g++** (MinGW-w64 / MSYS2) agregado al `PATH` del sistema.
+4. Clonar y situarse en el directorio:
+
+```bash
+git clone https://github.com/alitomaier2010-netizen/juego-de-naves.git
+cd juego-de-naves
+```
+
 ## Estructura
 
 ```
@@ -24,7 +54,8 @@ juegodenaves/
 ├── LICENSE
 ├── README.md
 ├── capturas/
-│   └── combate_consola.png        consola con nombre y apellido
+│   ├── combate_consola.png        consola con nombre y apellido
+│   └── resultado_consola.png      pantalla final de Game Over con el puntaje
 ├── docs/
 │   ├── InformeEEST1_LPR2026_ACT08_G03_v1.0.0.pdf
 │   ├── CHANGELOG.md
@@ -43,3 +74,5 @@ g++ src/main.cpp -o src/juegodenaves.exe
 ```
 
 > Usa `<windows.h>` y `<conio.h>`, por lo que solo compila en Windows (MinGW-w64).
+
+**Espejo automático:** https://gitlab.com/Alitopro/juego-de-naves
